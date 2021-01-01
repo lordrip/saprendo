@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && parcel build ./src/index.html --no-source-maps",
+    "build": "rimraf dist && parcel build ./src/index.html --no-source-maps --public-url '.'",
     "build-experimental": "rimraf dist && parcel build ./src/index.html --experimental-scope-hoisting",
     "start": "parcel ./src/index.html",
     "postbuild": "workbox generateSW"
