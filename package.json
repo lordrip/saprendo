@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf dist && parcel build ./src/index.html --no-source-maps --public-url '.' && postbuild",
+    "build": "rimraf dist && parcel build ./src/index.html --no-source-maps --public-url '.' && yarn postbuild",
     "build-experimental": "rimraf dist && parcel build ./src/index.html --experimental-scope-hoisting",
     "start": "parcel ./src/index.html",
     "postbuild": "workbox generateSW"
