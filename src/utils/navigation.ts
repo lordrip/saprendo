@@ -5,6 +5,10 @@ export class Navigation {
     private readonly maxPage = 3,
   ) { }
 
+  get pageCount() {
+    return this.maxPage;
+  }
+
   back(): void {
     if (this.currentIndex === this.minPage) {
       return;

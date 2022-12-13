@@ -13,13 +13,13 @@ const onRandomClick = (handler) => {
 }
 
 export const Page1 = (currentPlayer: string, onChangePlayer: (user: string) => void) => html`
-<h1>1 of 3</h1>
-<p>Who are you today?</p>
-<div class="player">
-  <select .value=${currentPlayer} @change=${domEventHandler(onChangePlayer)}>
-    <option disabled selected></option>
-    ${players.map((player) => html`<option ?selected=${player === currentPlayer}>${player}</option>`)}
+  <p class="mt-1 text-lg">Who do you want to be today?</p>
+
+  <select class="mt-2 text-md" .value=${currentPlayer} @change=${domEventHandler(onChangePlayer)}>
+    <option disabled selected value="">Who are you today?</option>
+    ${players.map((player) => html`<option ?selected=${player===currentPlayer}>${player}</option>`)}
   </select>
-  <button @click=${() => onRandomClick(onChangePlayer)}>Random</button>
-</div>
-`;
+
+  <p class="mt-1 text-lg">or let's pick randomly</p>
+
+  <button class="text-lg" @click=${()=> onRandomClick(onChangePlayer)}>Random</button>`;

@@ -3,10 +3,8 @@ import { registeredOperationsComponent } from '../operations';
 
 export const Page2 = (
   user: string,
-  onChangeOperation: (operationKey: string) => void,
+  onChangeOperation: (operationKey) => void,
 ) => html`
-<h1>2 of 3</h1>
-
-<p>Hello ${user}, what do you wanna play today?</p>
+<p class="mt-1 text-lg">Hello ${user}, what do you wanna play today?</p>
 ${registeredOperationsComponent(onChangeOperation)}
 `;

@@ -1,3 +1,3 @@
 import { renderApp } from './pages';
 
-renderApp();
+renderApp(true);
