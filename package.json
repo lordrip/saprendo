@@ -9,15 +9,16 @@
     "postbuild": "workbox generateSW"
   },
   "dependencies": {
-    "lit-html": "^2.2.0"
+    "lit-html": "^2.5.0"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "2.3.2",
-    "parcel": "^2.3.2",
+    "@parcel/transformer-sass": "^2.8.1",
+    "@parcel/types": "^2.8.1",
+    "parcel": "^2.8.1",
     "rimraf": "^3.0.2",
-    "sass": "^1.49.9",
-    "typescript": "^4.5.5",
-    "workbox-cli": "^6.5.0"
+    "sass": "^1.56.2",
+    "typescript": "^4.9.4",
+    "workbox-cli": "^6.5.4"
   },
   "packageManager": "yarn@3.2.0"
 }
