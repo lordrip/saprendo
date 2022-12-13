@@ -9,19 +9,22 @@ const onClick = (exercise, answer) => {
   }
 }
 
-export const touchOperation = (exercise: Operation, operationKey: string) => html`
+export const TouchOperation = (exercise: Operation, operationKey: string) => html`
 <div class="operation">
-  <span>${exercise.num1}</span>
-  <span class='operator ${operationKey.replace(' ', '')}'>${exercise.operator}</span>
-  <span>${exercise.num2}</span>
-  <span>=</span>
-  <span>?</span>
+  <span class="text-lg">${exercise.num1}</span>
+  <div class="operator ml-1">
+    <span class="text-xl">${exercise.operator}</span>
+  </div>
+  <span class="text-lg ml-1">${exercise.num2}</span>
+  <span class="text-lg ml-1">=</span>
+  <span class="text-lg ml-1">?</span>
 </div>
+
 <div class="result">
   ${
     arrayShuffle([exercise.answer, exercise.opt1, exercise.opt2, exercise.opt3])
       .map((option) => html`
-        <button @click=${() => onClick(exercise, option)}>${option}</button>
+        <button class="text-lg" @click=${() => onClick(exercise, option)}>${option}</button>
       `)
   }
 </div>

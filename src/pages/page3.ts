@@ -4,8 +4,6 @@ import { registeredOperations } from '../operations/registered-operations';
 export const Page3 = (
   operationKey: string,
 ) => html`
-<h1>3 of 3</h1>
-
-<p>Let's play ${registeredOperations[operationKey].title}!</p>
+<p class="mt-1 text-lg">Let's play ${registeredOperations[operationKey].title}!</p>
 ${registeredOperations[operationKey].component()}
 `;
