@@ -3,7 +3,7 @@ name: Node.js CI
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -24,7 +24,7 @@ jobs:
       run: yarn build
 
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.2.5
+      uses: JamesIves/github-pages-deploy-action@v4.4.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
