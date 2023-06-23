@@ -15,7 +15,7 @@
     "@parcel/transformer-sass": "^2.8.1",
     "@parcel/types": "^2.8.1",
     "parcel": "^2.8.1",
-    "rimraf": "^3.0.2",
+    "rimraf": "^5.0.0",
     "sass": "^1.56.2",
     "typescript": "^4.9.4",
     "workbox-cli": "^6.5.4"
