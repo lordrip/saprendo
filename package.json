@@ -20,5 +20,5 @@
     "typescript": "^5.0.0",
     "workbox-cli": "^7.0.0"
   },
-  "packageManager": "yarn@3.6.2"
+  "packageManager": "yarn@3.6.3"
 }
