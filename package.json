@@ -9,7 +9,7 @@
     "postbuild": "workbox generateSW"
   },
   "dependencies": {
-    "lit-html": "^2.5.0"
+    "lit-html": "^3.0.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.1",

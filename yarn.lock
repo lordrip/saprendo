@@ -4102,7 +4102,7 @@ __metadata:
   dependencies:
     "@parcel/transformer-sass": ^2.8.1
     "@parcel/types": ^2.8.1
-    lit-html: ^2.5.0
+    lit-html: ^3.0.0
     parcel: ^2.8.1
     rimraf: ^5.0.0
     sass: ^1.56.2
@@ -4892,12 +4892,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lit-html@npm:^2.5.0":
-  version: 2.8.0
-  resolution: "lit-html@npm:2.8.0"
+"lit-html@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "lit-html@npm:3.0.0"
   dependencies:
     "@types/trusted-types": ^2.0.2
-  checksum: 2d70df07248bcb2f502a3afb1e91d260735024fa669669ffb1417575aa39c3092779725ac1b90f5f39e4ce78c63f431f51176bc67f532389f0285a6991573255
+  checksum: 1df6bc84a30b9f848962483f456fe820ddac0f836476af8e2e01e4388def21afc129631acde2ad29c761df724b932ddd4d5be87146d8e98c25bc049076f3e4b8
   languageName: node
   linkType: hard
 
